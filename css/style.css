@@ -1,0 +1,47 @@
+
+
+body{
+    background-color: rgb(135, 155, 175) ;
+    
+}
+
+h4 {
+    font-size: 2em;
+    text-align: center; 
+    text-decoration: underline;
+    margin-right: 100px;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+    padding: 30px;
+    border-style:groove;
+}
+
+label {
+    font-style: italic;
+    font-weight: bold;
+}
+ 
+input, textarea, select {
+    background-color: white;
+    margin:5px ;
+    padding: 5px;
+
+}
+/*
+#box-escolha {
+    border: solid 3px  black;
+    padding: 5px;
+    margin: 10px;
+} */
+
+input[type=submit] , input[type=reset] {
+    background-color: rgb(223, 188, 100);
+    margin: auto;
+}
+
+#btn {
+    text-align: center;
+}

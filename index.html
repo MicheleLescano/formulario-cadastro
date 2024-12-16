@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <h4> Formulário de cadastro </h4>
+    <form action="#" method="get">
+
+    <label for="nome">Nome: </label>
+    <input type="text" name="nome" id="nome" maxlength="30" minlength="3" required placeholder="Digite seu nome...">
+
+    <br>
+    <br>
+
+    <label for="email">Email: </label>
+    <input type="email" name="email" id="email" placeholder="Digite seu email@.com...">
+
+    <br>
+    <br>
+
+    <label for="nasc" > Data de nascimento: </label>
+    <input type="date" name="nasc" id="nasc" min="2018-12-31">
+   <!--Quando for limitar idade de usuario  ("max="ano/mes/dia" para limitar menores de 18 anos") e ("min="ano/mes/dia" para crianças)-->
+    <br>
+    <br>
+
+
+    <label for="quant"> Quantidade: </label>
+    <input type="number" name="quant" id="quant" min="1" max="20" step="0.1">
+  <!--" step="" é usado para somar de quanto em quanto vai somar  "-->
+    <br>
+    <br>
+
+    <label for="fone"> Telefone: </label>
+    <input type="tel" name="fone" id="fone" pattern="[1-9]{2}-[0-9]{5}.[0-9]{4}" placeholder="(**) 1234-1234">
+
+    <br>
+    <br>
+
+    <label for="senha"> Senha: </label>
+    <input type="password" name="senha" id="senha"required minlength="8" placeholder="******">
+
+    <br>
+    <br>
+    
+    <input type="checkbox" name="news" id="news" required>
+    <label for="news"> Li e concordo com os termos de uso </label>
+
+    <br>
+    <br>
+
+    <label for="box-escolha"> Autoriza o uso de seus dados? </label>
+    <div id="box-escolha">
+        <input type="radio" name="escolha" id="sim" value="Sim" checked >
+        <label for="sim"> Sim </label>
+
+        <input type="radio" name="escolha" id="nao" value="Não">
+        <label for="nao"> Não </label>
+    </div>
+
+    <br>
+    <br>
+
+    <label for="nota"> Nota: </label>
+    <input type="range" name="nota" id="nota" min="0" max="10" step="1" list="marcadores" value="5">
+
+    <datalist id="marcadores">
+        <option value="0" label="0"></option>
+        <option value="5" label="5"></option>
+        <option value="10" label="10">1</option>
+    </datalist>
+
+    <br>
+    </br>
+
+    <label for="cor"> Cor: </label>
+    <input type="color" name="cor" id="cor">
+    
+    <br>
+    <br>
+
+    <label for="arquivo"> Arquivo: </label>
+    <input type="file" name="arquivo" id="arquivo">
+
+    <br>
+    <br>
+
+    <label for="turno"> Turno: </label>
+    <select name="turno" id="turno">
+        <option value=""> Selecione </option>
+        <option value="manha"> 1- Manhã </option>
+        <option value="tarde"> 2- Tarde </option>
+        <option value="noite"> 3- Noite </option>
+    </select>
+
+    <br>
+    <br>
+
+    <label for="bio"> Biografia: </label>
+    <textarea name="bio" id="bio" cols="40" rows="4" placeholder="Escreva sobre você..."></textarea>
+
+    <hr>
+    <div id="btn">
+       <input type="submit" value="Enviar dados">
+       <input type="reset" value="Limpar campos">
+    </div>
+
+    </form>
+
+</body>
+</html>
